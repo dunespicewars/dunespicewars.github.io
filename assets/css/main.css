@@ -1899,7 +1899,7 @@ button,
     #contents li, #contents li span {
       color: #3d4449
     }
-    
+
     #contents li:hover, #contents li span:hover a {
       color:  #f56a6a;
     }
@@ -2301,4 +2301,3 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
-
