@@ -78,7 +78,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #ffffff; }
+  background: #ffffff; } /*background color/colour*/
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1896,6 +1896,14 @@ button,
       text-indent: -1em;
     }
 
+    #contents li, #contents li span {
+      color: #3d4449
+    }
+    
+    #contents li:hover, #contents li span:hover a {
+      color:  #f56a6a;
+    }
+
     /*#main li:before {
       content: "+";
       padding-right: 5px;
@@ -2293,3 +2301,4 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
