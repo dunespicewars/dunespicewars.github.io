@@ -78,7 +78,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #ffffff; } /*background color/colour*/
+  background: #121212; } /*important background color/colour ALSO: 121212 is a great dark mode colour*/
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -91,7 +91,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #7f888f;
+  color: #e6ffff;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -112,7 +112,7 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #f56a6a;
+  color: #f56a6a; /*V IMPORTANT*/
   text-decoration: none; }
   a:hover {
     border-bottom-color: #f56a6a;
@@ -121,7 +121,7 @@ a {
       color: inherit; }
 
 strong, b {
-  color: #3d4449;
+  color: #f3f3f3; /*V IMPORTANT*/
   font-weight: 600; }
 
 em, i {
@@ -131,7 +131,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3d4449;
+  color: #ffffff; /*V IMPORTANT*/
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1069,7 +1069,7 @@ select {
   text-overflow: ellipsis; }
   select option {
     color: #3d4449;
-    background: #ffffff; }
+    background: #121212; }
   select:focus::-ms-value {
     background-color: transparent; }
   select::-ms-expand {
@@ -1173,7 +1173,7 @@ input[type="radio"] + label:before {
 /* Box */
 .box {
   border-radius: 0.375em;
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px rgba(210, 215, 217, 0.75); /*V IMPORTANT*/
   margin-bottom: 2em;
   text-align: center;
   padding: 1.5em; }
@@ -1452,15 +1452,16 @@ table {
   margin: 0 0 2em 0;
   width: 100%; }
   table tbody tr {
+    background-color: #212121;
     border: solid 1px rgba(210, 215, 217, 0.75);
     border-left: 0;
     border-right: 0; }
     table tbody tr:nth-child(2n + 1) {
-      background-color: rgba(230, 235, 237, 0.25); }
+      background-color: 424242; }
   table td {
     padding: 0.75em 0.75em; }
   table th {
-    color: #3d4449;
+    color: #ffffff;
     font-size: 0.9em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
@@ -1897,7 +1898,7 @@ button,
     }
 
     #contents li, #contents li span {
-      color: #3d4449
+      color: #e6ffff
     }
 
     #contents li:hover, #contents li span:hover a {
@@ -1958,7 +1959,7 @@ button,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #f5f6f7;
+  background-color: #212121; /*IMPORTANT COLOUR*/
   font-size: 0.9em;
   position: relative;
   width: 26em; }
@@ -1979,7 +1980,7 @@ button,
         margin-bottom: 0;
         padding-bottom: 0; }
     #sidebar > .inner > .alt {
-      background-color: #eff1f2;
+      background-color: #212121; /*IMPORTANT COLOUR*/
       border-bottom: 0;
       margin: -2.22222em 0 4.44444em -2.22222em;
       padding: 2.22222em;
@@ -2228,7 +2229,7 @@ button,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #3d4449;
+  color: #ffffff;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
