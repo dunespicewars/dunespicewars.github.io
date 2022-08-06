@@ -58,34 +58,36 @@
 											<a href="#spice"><li>2.1 | Spice</li></a>
 											<a href="#solari"><li>2.2 | Solari</li></a>
 											<a href="#plascrete"><li>2.3 | Plascrete</li></a>
-											<a href="#fuelCells"><li>2.4 | Fuel Cells</li></a>
-											<a href="#water"><li>2.5 | Water</li></a>
-											<a href="#manpower"><li>2.6 | Manpower</li></a>
+											<a href="#manpower"><li>2.4 | Manpower</li></a>
+											<a href="#fuelCells"><li>2.5 | Fuel Cells</li></a>
+											<a href="#water"><li>2.6 | Water</li></a>
 											<a href="#authority"><li>2.47 | Authority</li></a>
 											<a href="#knowledge"><li>2.8 | Knowledge</li></a>
 											<a href="#influence"><li>2.9 | Influence</li></a>
 											<a href="#intel"><li>2.10 | Intel</li></a>
-											<a href="#landsraad"><li>2.11 | Landsraad Standing</li></a>
-											<a href="#commandPoints"><li>2.12 | Command Points</li></a>
+											<a href="#commandPoints"><li>2.11 | Command Points</li></a>
+											<a href="#landsraad"><li>2.12 | Landsraad Standing</li></a>											
 										</ul>										
 									</div>
 									<div class="col-4 col-12-medium">
 										<a href="#specialRegions"><li><strong>3.0 | Special Regions</strong></li></a>
 										<ul>
-											<a href="#dialect"><li>3.1 | Local Dialect Studies</li></a>
-											<a href="#paracompass"><li>3.2 | Paracompass</li></a>
-											<a href="#waterSellers"><li>3.3 | Water Sellers Contacts</li></a>
-											<a href="#localHubs"><li>3.4 | Local Hubs</li></a>
-											<a href="#waterTrade"><li>3.5 | Water Trade</li></a>
-											<a href="#layLand"><li>3.6 | Lay of the Land</li></a>
-											<a href="#outpostLogistics"><li>3.7 | Outpost Logistics</li></a>
-											<a href="#borderDefence"><li>3.8 | Border Defense</li></a>
-											<a href="#airfieldNetwork"><li>3.9 | Airfield Network</li></a>
+											<a href="#acidLakes"><li>3.1 | Acid Lakes</li></a>
+											<a href="#crescent"><li>3.2 | Crescent Ridge</li></a>
+											<a href="#volcano"><li>3.3 | Great Volcano</li></a>
+											<a href="#moonDew"><li>3.4 | Moon Dew Vale</li></a>
+											<a href="#idaho"><li>3.5 | Mount Idaho</li></a>
+											<a href="#observatory"><li>3.6 | Observatory Mountain</li></a>
+											<a href="#polar"><li>3.7 | Polar Sink</li></a>
+											<a href="#shield"><li>3.8 | Shield Wall</li></a>
+											<a href="#riches"><li>3.9 | Well of Riches</li></a>
+											<a href="#rift"><li>3.10 | White Rift</li></a>
+											<a href="#nest"><li>3.11 | Worm Nest</li></a>
 										</ul>
 										<a href="#sietches"><li><strong>4.0 | Sietches</strong></li></a>
 										<ul>
-											<a href="#composite"><li>4.1 | Composite Materials</li></a>
-											<a href="#advancedEng"><li>4.2 | Advanced Engineering</li></a>
+											<a href="#sietchInfo"><li>4.1 | General Info</li></a>
+											<a href="#sietchTraits"><li>4.2 | Sietch Traits</li></a>
 										</ul>
 									</ul>
 									</div>
@@ -157,11 +159,6 @@
 																	<td>+6 Solari production</td>
 																</tr>
 															</tbody>
-															<tfoot>
-																<tr>
-																	<td colspan="2"></td>
-																</tr>
-															</tfoot>
 														</table>
 													</div>
 									<!-- END VILLAGE INFO -->
@@ -265,244 +262,172 @@
 										<li>− No more than 1000 Intel can be stockpiled at any given time</li>
 									</ul>
 
-									<a id="landsraad"><h3><strong>Landsraad Standing</strong></h3></a>
-									<ul>
-										<li>+ Landsraad Standing represents your Faction's current political power</li>
-										<li>+ A high Landsraad Standing will grant your Faction several buffs while a low Landsraad Standing can have severe penalties</li>
-										<li><strong>**TO DO: ADD LANDSRAAD STANDING TABLE**</strong></li>
-									</ul>
-
 									<a id="commandPoints"><h3><strong>Command Points</strong></h3></a>
 									<ul>
 										<li>+ Command Points limit the size of your army</li>
 										<li>+ By default, your Main Base grants you 22 Command Points</li>
 										<li>+ This cap is mainly increased by researching Military Developments</li>
 									</ul>
+
+									<a id="landsraad"><h3><strong>Landsraad Standing</strong></h3></a>
+									<ul>
+										<li>+ Landsraad Standing represents your Faction's current political power</li>
+										<li>+ A high Landsraad Standing will grant your Faction several buffs while a low Landsraad Standing can have severe penalties</li>
+										<li>+ The exact Landsraad Standing effects can be seen below:</li>
+									</ul>
+										<div class="table-wrapper">
+														<table>
+															<thead>
+																<tr>
+																	<th>Landsraad Standing</th>
+																	<th>Effect(s)</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>0-49</td>
+																	<td>
+																		<li>-50% CHOAM Spice exchange rate</li>
+																		<li>100% Votes</li>
+																		<li>-5 Influence</li>
+																		<li>Targeted by Landsraad Guard every 10 days</li>
+																	</td>
+																</tr>
+																<tr>
+																	<td>50-99</td>
+																	<td>
+																		<li>-25% CHOAM Spice exchange rate</li>
+																		<li>-50 Votes</li>
+																		<li>-5 Influence</li>
+																	</td>
+																</tr>
+																<tr>
+																	<td>100-199</td>
+																	<td>
+																		<li>-20% CHOAM Spice exchange rate</li>
+																		<li>-20 Votes</li>
+																		<li>-2 Influence</li>
+																	</td>
+																</tr>
+																<tr>
+																	<td>200-299</td>
+																	<td>+200 Hegemony</td>
+																</tr>
+																<tr>
+																	<td>300-399</td>
+																	<td>
+																		<li>+10% CHOAM Spice exchange rate</li>
+																		<li>+20 Votes</li>
+																		<li>+2 Influence</li>
+																		<li>+600-800 Hegemony</li>
+																	</td>
+
+																</tr>
+																<tr>
+																	<td>400-500</td>
+																	<td>
+																		<li>+20% CHOAM Spice exchange rate</li>
+																		<li>+30 Votes</li>
+																		<li>+3 Influence</li>
+																		<li>+1400 Hegemony</li>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>					
 									<!-- END RESOURCES -->
 
-									<!-- EXPANSION -->
+									<!-- SPECIAL REGIONS -->
 									<header id="header"></header>
-									<a id="expansion"><h2>Expansion</h2></a> 
-									<a id="dialect"><h3><strong>Local Dialect Studies</strong></h3></a>
+									<a id="specialRegions"><h2>Special Regions</h2></a> 
+									<p>All or some of these Special Regions will randomly spawn around the map at the start of the game</p>
+									<a id="acidLakes"><h3><strong>Acid Lakes</strong></h3></a>
 									<ul>
-										<li>-15% Authority cost to annex a Village</li>
-										<li>Unlocks the Crafts Workshop building</li>
+										<li>-10% Health per day</li>
+										<li>+100% Research Hub resource production</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>Efforts in social and cultural integration always help assuaging the pyon's fears</blockquote>			
 
-									<a id="paracompass"><h3><strong>Paracompass</strong></h3></a>
+									<a id="crescent"><h3><strong>Crescent Ridge</strong></h3></a>
 									<ul>
-										<li>Military units have -20% daily Supply drain</li>
-										<li>Reveals all hidden Points of Interest</li>
-										<li>Ornithopter +20% Speed</li>
+										<li>+100% Windtrap resource production</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>A Paracompass is the best navigation tool on a planet with an unstable magnetic field</blockquote>
 
-									<a id="waterSellers"><h3><strong>Water Sellers Contacts</strong></h3></a>
+									<a id="volcano"><h3><strong>Great Volcano</strong></h3></a>
 									<ul>
-										<li>-20% military units Water Upkeep</li>
-										<li>-20% Water Upkeep on Villages</li>
-										<li>Unlocks the Water Extractor building</li>
+										<li>+100% Fuel Cell Factory resource production</li>
+										<li>Fremen only: Allows for the construction of Ceremonial Caves in the local Village</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>Good relations with the Water Sellers Guild can greatly alleviate the needs and risks associated with water on the desert planet</blockquote>
 
-									<a id="localHubs"><h3><strong>Local Hubs</strong></h3></a>
+									<a id="moonDew"><h3><strong>Moon Dew Vale</strong></h3></a>
 									<ul>
-										<li>+0.2 Knowledge per controlled Village</li>
-										<li>+40% Resource production in villages with exactly one building</li>
-										<li>Unlocks the Administrative Hall building</li>
+										<li>Gain 20% Supply daily</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>Further fostering local ties helps when it comes to surviving on a planet like Arrakis</blockquote>
 
-									<a id="waterTrade"><h3><strong>Water Trade</strong></h3></a>
+									<a id="idaho"><h3><strong>Mount Idaho</strong></h3></a>
 									<ul>
-										<li>+1 Solari per positive Water</li>
-										<li>+100% Health on Windtrap</li>
-										<li>Unlocks the Recycling Vats building</li>
+										<li>+100% Data Center resource production</li>
+										<li>+100% Listening Post resource production</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>Setting up your own water exploitation infrastructure can be a safe and very rewarding strategy</blockquote>
 
-									<a id="layLand"><h3><strong>Lay of the Land</strong></h3></a>
+									<a id="observatory"><h3><strong>Observatory Mountain</strong></h3></a>
 									<ul>
-										<li>You can assign 1 more Agents to Arrakis Infiltration</li>
-										<li>Agents assigned on Arrakis Infiltration produce 20% more Authority</li>
-										<li>+100% Sietch detection speed</li>
+										<li>+100% Plascrete Factory resource production</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>To the layman, Dune is only a pile of dust.  Only those who know the land see the deadly traps and abundant opportunities</blockquote>
 
-									<a id="outpostLogistics"><h3><strong>Outpost Logistics</strong></h3></a>
+									<a id="polar"><h3><strong>Polar Sink</strong></h3></a>
 									<ul>
-										<li>Owned Villages Authority penalty to annex a new Village is reduced by 30%</li>
-										<li>-10% Solari Upkeep on Villages</li>
-										<li>Unlocks the Investment Office building</li>
+										<li>Note: Always spawns in the middle of the map</li>
+										<li>Allows the construction of a Water Extractor</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>Setting up a solid netowrk of outposts generally requires defensive installations, the right people, and convincing gifts</blockquote>
 
-									<a id="borderDefence"><h3><strong>Border Defense</strong></h3></a>
+									<a id="shield"><h3><strong>Shield Wall</strong></h3></a>
 									<ul>
-										<li>+1 Militia slot</li>
-										<li>+1 Militia Armor</li>
-										<li>+10% Militia Health</li>
+										<li>-50% Building upkeep in this region</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>These small stations are usually built within villages, allowing for better communication with remote places</blockquote>
 
-									<a id="airfieldNetwork"><h3><strong>Airfield Network</strong></h3></a>
+									<a id="riches"><h3><strong>Well of Riches</strong></h3></a>
 									<ul>
-										<li>-40% Airfield construction costs</li>
-										<li>-40% Airfield upkeep costs</li>
-										<li>Shuttles are 40% faster</li>
+										<li>+100% Processing Plant resource production</li>
+										<li>+500 Hegemony</li>
 									</ul>
-									<blockquote>A vast territory requires a solid and efficient transport network</blockquote>
-									<!-- END EXPANSION -->
 
-									<!-- ECONOMY -->
+									<a id="rift"><h3><strong>White Rift</strong></h3></a>
+									<ul>
+										<li>+200% Crafts Workshop resource production</li>
+										<li>+500 Hegemony</li>
+									</ul>
+
+									<a id="nest"><h3><strong>Worm Nest</strong></h3></a>
+									<ul>
+										<li>Military units are 50% more likely to attract Sandworms</li>
+										<li>+25% Spice production in the region</li>
+										<li>+500 Hegemony</li>
+									</ul>
+									<!-- END SPECIAL REGIONS -->
+
+									<!-- SIETCHES -->
 									<header id="header"></header>
-									<a id="economy"><h2>Economy</h2></a> 
-									<a id="composite"><h3><strong>Composite Materials</strong></h3></a>
+									<a id="sietches"><h2>Sietches</h2></a> 
+									<a id="sietchInfo"><h3>General Info</h3></a>
 									<ul>
-										<li>-15% village buildings construction costs</li>
-										<li>Buildings are contructed 15% faster in villages</li>
-										<li>+15% village buildings repair speed</li>
+										<li>+ Sietches will randomly spawn somewhere on the map when the game is created</li>
+										<li>+ Sietches will periodically send raiders to attack nearby villages owned by players (if their relation level is low)</li>
+										<li>+ Initially, Sietches are competely invisible. However, players can increase their Sietch detection speed through various means</li>
+										<li>+ Once a Sietch is discovered, players can choose to trade them 10 Water in exchange for another Resource determined by the Sietch</li>
+										<li>+ Trading with a Sietch slowly raises your relations. At 100 relation level, you can ally the Sietch to gain their unique trait</li>
 									</ul>
-									<blockquote>Dune's harsh environment makes composite materials a key part of building a vast and durable infrastructure</blockquote>			
 
-									<a id="advancedEng"><h3><strong>Advanced Engineering</strong></h3></a>
-									<ul>
-										<li>+5% resource production in Villages per building built on an extra slot</li>
-										<li>+50% Health on all buildings</li>
-										<li>Unlocks the Processing Plant building</li>
-									</ul>
-									<blockquote>These improved construction techniques specific to Arrakis' environment are dedicated to infrastructure efficiency</blockquote>
-
-									<a id="modular"><h3><strong>Modular Parts</strong></h3></a>
-									<ul>
-										<li>+1 maximum assignable Crew in Harvesters</li>
-										<li>+30% Harvesters Health regeneration</li>
-										<li>Unlocks the Harvester Works building</li>
-									</ul>
-									<blockquote>Modular parts unlock customization options for your vehicles, like extra crew cabins in your Harvesters</blockquote>
-
-									<a id="energyMarkets"><h3><strong>Energy Markets</strong></h3></a>
-									<ul>
-										<li>+20% Fuel Cells</li>
-										<li>+2 Solari per spare Fuel Cell</li>
-									</ul>
-									<blockquote>He who controls the energy market can become a very rich man</blockquote>
-
-									<a id="gridex"><h3><strong>Gridex Plane</strong></h3></a>
-									<ul>
-										<li>+1 maximum assignable Crew in Harvesters</li>
-										<li>Unlocks the Spice Silos building</li>
-									</ul>
-									<blockquote>A marvel of engineering, the Gridex Plane is a differential-charge separator that revolutionized Spice harvesting</blockquote>
-
-									<a id="economicLobbying"><h3><strong>Economic Lobbying</strong></h3></a>
-									<ul>
-										<li>+5% CHOAM Spice exchange rate per agent assigned to CHAOM Infiltration</li>
-										<li>Allows the training of Mercenary</li>
-										<li>Unlocks the CHOAM branch building</li>
-									</ul>
-									<blockquote>Preventative action is often the best way to safeguard your interests and optimize returns</blockquote>
-
-									<a id="crewTraining"><h3><strong>Crew Training Program</strong></h3></a>
-									<ul>
-										<li>+1 maximum assignable Crew in Harvesters</li>
-										<li>+5% Spice production</li>
-										<li>+50% Hegemony production from Spice tax paid</li>
-									</ul>
-									<blockquote>Some Houses consider harvester crews as expendable.  Others know in their happiness lies the recipe for the very best Spice yields</blockquote>
-
-									<a id="CHOAM"><h3><strong>CHOAM Hegemony</strong></h3></a>
-									<ul>
-										<li>+5% CHOAM Spice exchange rate per agent assigned to CHAOM Infiltration</li>
-										<li>+5 Solari production</li>
-										<li>+5% Solari production</li>
-									</ul>
-									<blockquote>A network of warehouses that allow easy access to vital resources, whenever the need arises</blockquote>
-
-									<a id="riches"><h3><strong>Riches of Arrakis</strong></h3></a>
-									<ul>
-										<li>+20 Solari production per controlled Special Region</li>
-										<li>+2% Solari production per controlled Special Region</li>
-										<li>+20 Village resource production in Special Regions</li>
-									</ul>
-									<blockquote>Arrakis teaches the attitude of the knife - chopping off what's incomplete and saying: "Now, it's complete because it's ended here."</blockquote>
-									<!-- END ECONOMY -->
-
-									<!-- MILITARY -->
-									<header id="header"></header>
-									<a id="military"><h2>Military</h2></a> 
-									<a id="survival"><h3><strong>Survival Training</strong></h3></a>
-									<ul>
-										<li>Increases armies' max Supply by 30%</li>
-										<li>Unlocks that faction's Tier 2 unit</li>
-										<li>Unlocks the Military Base building</li>
-									</ul>
-									<blockquote>Arrakis is the deadliest and most efficient instructor</blockquote>			
-
-									<a id="defenceSystems"><h3><strong>Defence Systems</strong></h3></a>
-									<ul>
-										<li>+1 Militia slot</li>
-										<li>+1 Missile Battery limit</li>
-										<li>Unlocks the Enhanced Fortifications building</li>
-									</ul>
-									<blockquote>There is strength in numbers, and also in very thick walls</blockquote>
-
-									<a id="supportStructures"><h3><strong>Support Structures</strong></h3></a>
-									<ul>
-										<li>You can assign 1 more Agent to Spacing Guild Infiltration</li>
-										<li>Unlocks that faction's Tier 3 unit</li>
-										<li>Unlocks the Command Post building</li>
-									</ul>
-									<blockquote>The Command Post, medbays and decontamination cells all contribute to the efficiency of an army</blockquote>
-
-									<a id="groundCommand"><h3><strong>Ground Command</strong></h3></a>
-									<ul>
-										<li>+6 Command Point</li>
-										<li>-20% military units Manpower Upkeep</li>
-										<li>Unlocks the Barracks building</li>
-									</ul>
-									<blockquote>Controlling strategic areas remains a necessary step towards control of the planet itself</blockquote>
-
-									<a id="threat"><h3><strong>Military Threat</strong></h3></a>
-									<ul>
-										<li>1% of your units' total Power is produced as Influence</li>
-										<li>Military units have -10% daily Supply drain</li>
-										<li>Unlocks the Military Pressure Treaty</li>
-									</ul>
-									<blockquote>The pen may be mightier than the sword, but the sword never runs out of ink</blockquote>
-
-									<a id="callToArms"><h3><strong>Call to Arms</strong></h3></a>
-									<ul>
-										<li>+10% Manpower production</li>
-										<li>Unlocks the Heavy Militia unit</li>
-										<li>Unlocks that faction's Tier 4 Unit</li>
-									</ul>
-									<blockquote>Cultivating loyalty is the best way to ensure your people will step forward when the need arises</blockquote>
-
-									<a id="armyLogistics"><h3><strong>Army Logistics</strong></h3></a>
-									<ul>
-										<li>Gain +50 Plascrete when pillaging a village</li>
-										<li>Gain 50% more resources when pillaging a village</li>
-										<li>Armies occupying a village gain 50% Health regeneration per day outside combat</li>
-									</ul>
-									<blockquote>An army needs a lot of resources to operating, including those found in the field</blockquote>
-
-									<a id="airCommand"><h3><strong>Air Command</strong></h3></a>
-									<ul>
-										<li>+6 Command Point</li>
-										<li>+20% Airfield range</li>
-										<li>Missiles attack from 20% further</li>
-									</ul>
-									<blockquote>Mastery of the sky allows for a strategic troops deployment advantage</blockquote>
-
-									<a id="highCommand"><h3><strong>High Command</strong></h3></a>
-									<ul>
-										<li>+6 Command Point</li>
-										<li>+1 Armor for all military Units</li>
-										<li>Tier 4 Units start with 1 more Experience level</li>
-									</ul>
-									<blockquote>A reliable military intelligence is key to strategic decision making</blockquote>
+									<a id="sietchTraits"><h3>Sietch Traits</h3></a>
+									<p>**TO DO**</p>
+									
 									<!-- END MILITARY -->
 
 									<header id="header"></header>
