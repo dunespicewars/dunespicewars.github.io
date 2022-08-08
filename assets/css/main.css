@@ -1906,6 +1906,8 @@ button,
       color:  #f56a6a;
     }
 
+    
+
     /*#main li:before {
       content: "+";
       padding-right: 5px;
@@ -2303,3 +2305,6 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+.link { color: #ffffff; } /* CSS link color (red) */
+.link:hover { color: #00FF00; } /* CSS link hover (green) */
