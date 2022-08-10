@@ -2308,3 +2308,5 @@ button,
 
 .link { color: #ffffff; } /* CSS link color (red) */
 .link:hover { color: #00FF00; } /* CSS link hover (green) */
+
+.search { color: #424242; }
