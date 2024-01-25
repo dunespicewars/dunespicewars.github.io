@@ -1187,26 +1187,6 @@ input[type="radio"] + label:before {
     border-radius: 0;
     padding: 0; }
 
-.rainbow-box {
-  font-style: italic;
-  border-radius: 0.375em;
-  border: solid 1px #f56a6a; /*V IMPORTANT could change to #f56a6a*/
-  margin-bottom: 2em;
-  text-align: center;
-  padding: 1.5em; }
-  .rainbow-box > :last-child,
-  .rainbow-box > :last-child > :last-child,
-  .rainbow-box > :last-child > :last-child > :last-child {
-    margin-bottom: 0; }
-  .rainbow-box.alt {
-    border: 0;
-    border-radius: 0;
-    padding: 0; }
-  .rainbow-box:hover {
-    background-color: rgba(255, 99, 71, 0.2);
-  }
-}
-
 /* Icon */
 .icon {
   text-decoration: none;
